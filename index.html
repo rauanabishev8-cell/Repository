@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="calculator">
+      <div class="output">
+        <p id="output">0</p>
+      </div>
+      <div class="pads">
+        <button class="btn-pad">%</button>
+        <button onclick="clearOne()" class="btn-pad">⌫</button>
+        <button onclick="clearAll()" class="btn-pad btn-red">C</button>
+        <button class="btn-pad" onclick="multiply()">x</button>
+
+        <button onclick="typeNumber(7)" class="btn-pad">7</button>
+        <button onclick="typeNumber(8)" class="btn-pad">8</button>
+        <button onclick="typeNumber(9)" class="btn-pad">9</button>
+        <button onclick="divide()" class="btn-pad">÷</button>
+
+        <button onclick="typeNumber(4)" class="btn-pad">4</button>
+        <button onclick="typeNumber(5)" class="btn-pad">5</button>
+        <button onclick="typeNumber(6)" class="btn-pad">6</button>
+        <button class="btn-pad" onclick="minus()">-</button>
+
+        <button onclick="typeNumber(1)" class="btn-pad">1</button>
+        <button onclick="typeNumber(2)" class="btn-pad">2</button>
+        <button onclick="typeNumber(3)" class="btn-pad">3</button>
+        <button class="btn-pad" onclick="plus()">+</button>
+
+        <button class="btn-pad">+/-</button>
+        <button onclick="typeNumber(0)" class="btn-pad">0</button>
+        <button class="btn-pad">,</button>
+        <button class="btn-pad btn-blue" onclick="complete()">=</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅Сюда правильно подключаем скрипт -->
+  <script src="script.js"></script>
+</body>
+</html>
